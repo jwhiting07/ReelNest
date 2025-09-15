@@ -1,8 +1,22 @@
 # ReelNest
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#)
+[![Java Version](https://img.shields.io/badge/Java-24-blue)](#)
+
 ReelNest is a full-stack project management platform designed for filmmakers and creative teams. It allows users to create and manage projects, organize sections like writing, storyboarding, VFX, and more, and store project assets efficiently.
 
 ---
+
+## Features
+
+- User authentication and role management
+- Project creation and ownership
+- Section-based organization of projects (Writing, Storyboarding, VFX, etc.)
+- UUID-based IDs for projects and users
+- Database migrations with Flyway
+- Integration with AWS S3 for asset storage
+- Security defaults for development
 
 ## 🛠 Tech Stack
 
