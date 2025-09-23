@@ -6,6 +6,7 @@
 
 ReelNest is a full-stack project management platform designed for filmmakers and creative teams. It allows users to create and manage projects, organize sections like writing, storyboarding, VFX, and more, and store project assets efficiently.
 
+This project is effectively considered archived -- I am currently trying to navigate JWT integration, and may resume it eventually, but as of now I will not be continuing to work on this project.
 ---
 
 ## Features
