@@ -8,6 +8,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
+@EnableWebSecurity
 @Configuration // Marks this class as a Spring configuration class
 public class SecurityConfig {
 
@@ -34,7 +35,8 @@ public class SecurityConfig {
                 // Configure request authorization rules
                 .authorizeHttpRequests(auth -> auth
                         .anyRequest().permitAll() // allow all requests
-                );
+                )
+                .addFilterBefore(new JwtAuthFilter(), UsernamePasswordAuthenticationFilter.class);
 
         // Build and return the configured filter chain
         return http.build();
